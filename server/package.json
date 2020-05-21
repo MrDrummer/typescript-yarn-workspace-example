@@ -2,17 +2,18 @@
   "name": "@cashew/server",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext .ts .",
+    "build": "yarn lint && tsc",
+    "build:watch": "tsc --watch",
+    "start": "ts-node src/index.ts"
+  },
   "dependencies": {
-    "@cashew/common": "1.0.0"
+    "@cashew/common": "*"
   },
   "devDependencies": {
     "@types/node": "^10.3.2",
     "ts-node": "^6.1.0",
     "typescript": "^2.9.1"
-  },
-  "scripts": {
-    "start": "ts-node src/index.ts",
-    "build": "tsc"
   }
 }
