@@ -12,8 +12,8 @@
     "@cashew/common": "*"
   },
   "devDependencies": {
-    "@types/node": "^10.3.2",
     "ts-node": "^6.1.0",
-    "typescript": "^2.9.1"
+    "@types/node": "^14.0.5",
+    "typescript": "^3.9.3"
   }
 }
